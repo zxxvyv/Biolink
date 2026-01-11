@@ -15,92 +15,76 @@
     <div id="enter-text">click to enter</div>
 </div>
 
+<audio id="audio">
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
 <div class="background">
     <img src="background.gif" class="background-gif" alt="background">
 </div>
 
-<div class="card">
+<main class="layout">
 
-    <div class="pfp">
-        <img src="pfp.gif" alt="pfp">
+    <div class="card profile-card">
+        <div class="pfp">
+            <img src="pfp.gif" alt="pfp">
+        </div>
+
+        <div class="username">
+            <span class="username-text">zxxvyv</span>
+        </div>
+
+        <div class="description">
+            <span class="description-text">life is roblox</span>
+        </div>
+
+        <div class="social-buttons">
+            <a href="https://github.com/zxxvyv" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://web.telegram.org/k/#@JudenVergaser88" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.instagram.com/084.marius" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
     </div>
 
-    <div class="username">
-        <span class="username-text">zxxvyv</span>
+    <div class="row">
+        <div class="card small-card">
+            <a href="https://www.youtube.com/@gothb0icl1qu3" class="mini-button" target="_blank">
+                <i class="fab fa-youtube"></i><span>YouTube</span>
+            </a>
+        </div>
+
+        <div class="card small-card">
+            <a href="https://www.tiktok.com/@084.marius" class="mini-button" target="_blank">
+                <i class="fab fa-tiktok"></i><span>TikTok</span>
+            </a>
+        </div>
     </div>
 
-    <div class="description">
-        <span class="description-text">life is roblox</span>
-    </div>
-
-    <div class="social-buttons">
-        <a href="https://github.com/zxxvyv" target="_blank" aria-label="github">
-            <i class="fab fa-github"></i>
-        </a>
-
-        <a href="https://web.telegram.org/k/#@JudenVergaser88" target="_blank" aria-label="telegram">
-            <i class="fab fa-telegram"></i>
-        </a>
-
-        <a href="https://www.instagram.com/084.marius" target="_blank" aria-label="insta">
-            <i class="fab fa-instagram"></i>
-        </a>
-    </div>
-
-</div>
-
-<div class="card2">
-    <a href="https://www.youtube.com/@gothb0icl1qu3" class="mini-button" target="_blank" aria-label="youtube">
-        <i class="fab fa-youtube"></i>
-        <span>YouTube</span>
+    <a href="https://www.tiktok.com/@084.marius" class="card big-button" target="_blank">
+        <img src="spin-haunter.gif" class="card-gif">
+        <span class="card-text">Best GeoGuessr Script</span>
+        <img src="spin-haunter.gif" class="card-gif">
     </a>
-</div>
 
-<div class="card3">
-    <a href="https://www.tiktok.com/@084.marius" class="mini-button" target="_blank" aria-label="tiktok">
-        <i class="fab fa-tiktok"></i>
-        <span>Tiktok</span>
-    </a>   
-</div>
-
-<a href="https://discord.gg/6fCvDy4YfT" class="card4 big-button" target="_blank" aria-label="tiktok">
-    <img src="spin-haunter.gif" class="card-gif">
-    <span class="card-text">Best GeoGuessr Script</span>
-    <img src="spin-haunter.gif" class="card-gif">
-
-</a>
-
-<div class="card5">
-    <div class="discord-widget">
-        <div class="avatar-wrapper" style="position: relative; width: 80px; height: 80px;">
-            <img id="discord-avatar" src="" alt="avatar">
-            <span id="status-dot"></span>
-        </div>
-        <div class="discord-info">
-            <span id="status-text">Loading</span>
+    <div class="card">
+        <div class="discord-widget">
+            <div class="avatar-wrapper">
+                <img id="discord-avatar" src="">
+                <span id="status-dot"></span>
+            </div>
+            <div class="discord-info">
+                <span id="status-text">Loading</span>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="card6">
-  <div class="music-player">
-
-    <div class="track-left">
-      <span class="track-title">Lass alles fallen - Beyazz</span>
+    <div class="card">
+        <div class="music-player">
+            <span class="track-left">Lass alles fallen - Beyazz</span>
+            <button id="playBtn"><i class="fa-solid fa-play"></i></button>
+        </div>
     </div>
 
-    <div class="track-right">
-      <button id="playBtn">
-        <i class="fa-solid fa-play"></i>
-      </button>
-    </div>
-
-    <audio id="audio">
-      <source src="music.mp3" type="audio/mpeg">
-    </audio>
-
-  </div>
-</div>
+</main>
 
 <script>
 const splash = document.getElementById('enter-screen');
@@ -206,9 +190,3 @@ fetchDiscordWidget();
 
 </body>
 </html>
-
-
-
-
-
-
