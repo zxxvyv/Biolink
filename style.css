@@ -312,20 +312,6 @@ body {
     position: relative;
 }
 
-.view-counter {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background: rgba(0,0,0,0.5);
-    padding: 6px 12px;
-    border-radius: 12px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 0 0 6px #000;
-    z-index: 10;
-    pointer-events: none;
-}
 
 
 
